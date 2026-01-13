@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MOX VOX Premium Nightlife Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 45 10% 90%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 45 10% 90%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 45 10% 90%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 45 10% 90%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 43 74% 49%;
+
+    --radius: 0.5rem;
+
+    /* Custom MOX VOX tokens */
+    --gold: 43 74% 49%;
+    --gold-light: 43 80% 65%;
+    --gold-dark: 43 70% 35%;
+    --charcoal: 0 0% 7%;
+    --charcoal-light: 0 0% 12%;
+    --charcoal-dark: 0 0% 4%;
+    --cream: 45 10% 90%;
+    --cream-muted: 45 5% 60%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 49%), hsl(43 80% 65%));
+    --gradient-dark: linear-gradient(180deg, hsl(0 0% 4%), hsl(0 0% 8%));
+    --gradient-overlay: linear-gradient(180deg, hsla(0 0% 0% / 0.7) 0%, hsla(0 0% 0% / 0.4) 50%, hsla(0 0% 0% / 0.8) 100%);
+    --gradient-card: linear-gradient(145deg, hsla(0 0% 10% / 0.8), hsla(0 0% 5% / 0.9));
+
+    /* Shadows */
+    --shadow-gold: 0 4px 30px hsla(43 74% 49% / 0.15);
+    --shadow-dark: 0 10px 40px hsla(0 0% 0% / 0.5);
+    --shadow-card: 0 8px 32px hsla(0 0% 0% / 0.4);
+
+    /* Font families */
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 45 10% 90%;
+
+    --card: 0 0% 7%;
+    --card-foreground: 45 10% 90%;
+
+    --popover: 0 0% 7%;
+    --popover-foreground: 45 10% 90%;
+
+    --primary: 43 74% 49%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 45 10% 90%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 43 74% 49%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 43 74% 49%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .text-cream {
+    color: hsl(var(--cream));
+  }
+
+  .text-cream-muted {
+    color: hsl(var(--cream-muted));
+  }
+
+  .bg-charcoal {
+    background-color: hsl(var(--charcoal));
+  }
+
+  .bg-charcoal-light {
+    background-color: hsl(var(--charcoal-light));
+  }
+
+  .bg-charcoal-dark {
+    background-color: hsl(var(--charcoal-dark));
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .gradient-overlay {
+    background: var(--gradient-overlay);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .glass-card {
+    background: hsla(0 0% 10% / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsla(0 0% 100% / 0.05);
+  }
+
+  .glass-button {
+    background: hsla(0 0% 100% / 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsla(0 0% 100% / 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .glass-button:hover {
+    background: hsla(0 0% 100% / 0.1);
+    border-color: hsl(var(--gold));
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  .border-gold-subtle {
+    border-color: hsla(43 74% 49% / 0.3);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-narrow {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .hover-gold {
+    transition: color 0.3s ease;
+  }
+
+  .hover-gold:hover {
+    color: hsl(var(--gold));
+  }
+
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+}
