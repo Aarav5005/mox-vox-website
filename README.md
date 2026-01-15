@@ -1,73 +1,138 @@
-# Welcome to your Lovable project
+🍽️ MOX VOX – Premium Rooftop Restaurant & Nightlife Website
 
-## Project info
+Official website for MOX VOX, a premium pure vegetarian rooftop restaurant & nightlife destination located in Jodhpur, Rajasthan.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project showcases MOX VOX’s brand identity, ambience, menu, party packages, guest testimonials, and booking options with a modern, luxury-focused UI.
 
-## How can I edit this code?
+🌟 Features
 
-There are several ways of editing your application.
+🎶 Luxury Rooftop Nightlife Experience showcase
 
-**Use Lovable**
+🥗 Pure Vegetarian Menu with clear pricing & disclaimer
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🎉 Party & Celebration Packages (Birthday, Corporate, Family, Groups)
 
-Changes made via Lovable will be committed automatically to this repo.
+⭐ Guest Testimonials Section (curated real reviews)
 
-**Use your preferred IDE**
+📸 Gallery Section with premium ambience visuals
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📞 Quick Actions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Call Now
 
-Follow these steps:
+WhatsApp Booking
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Zomato Order
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Swiggy Dineout Reservation
 
-# Step 3: Install the necessary dependencies.
-npm i
+🕒 Opening Hours Display
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+📍 Google Maps Location Embed
+
+📱 Fully Responsive (Desktop & Mobile Optimized)
+
+🛠️ Tech Stack
+
+React + TypeScript
+
+Vite
+
+CSS (Custom styling)
+
+SVG Assets for logos & icons
+
+Netlify / Vercel Ready
+
+📂 Project Structure
+mox-vox-website/
+│
+├── public/
+│   ├── mox-vox-logo.svg
+│   ├── pure_veg.svg
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── AboutSection.tsx
+│   │   ├── MenuSection.tsx
+│   │   ├── GallerySection.tsx
+│   │   ├── PackagesSection.tsx
+│   │   ├── TestimonialsSection.tsx
+│   │   ├── BookingSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── pages/
+│   │   └── Index.tsx
+│   │
+│   ├── index.css
+│   └── main.tsx
+│
+└── README.md
+
+🚀 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/Aarav5005/mox-vox-website.git
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run Locally
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The site will be available at:
 
-**Use GitHub Codespaces**
+http://localhost:5173
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🌐 Live Website
 
-## What technologies are used for this project?
+🔗 Production URL:
+👉 https://mox-vox.online
 
-This project is built with:
+(Hosted via Netlify with custom domain)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🏷️ Brand Details
 
-## How can I deploy this project?
+Name: MOX VOX
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Category: Pure Vegetarian Rooftop Restaurant & Nightlife
 
-## Can I connect a custom domain to my Lovable project?
+Location:
+5th Floor, Amrit Kalash, Jodhpur, Rajasthan
 
-Yes, you can!
+Opening Hours:
+Open Daily — 11:00 AM to 11:00 PM
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+📞 Contact & Booking
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📱 Phone: +91 9461761555
+
+💬 WhatsApp Booking Available
+
+🍴 Zomato – Order & Delivery
+
+🪑 Swiggy Dineout – Table Reservations
+
+📸 Instagram: @mox_vox
+
+📌 Notes
+
+Prices listed on the menu are subject to change
+
+All food offerings are 100% vegetarian
+
+This project is optimized for performance, SEO, and mobile usability
+
+👨‍💻 Developer
+
+Aarav Panchal
+Student, IIT Jodhpur
+GitHub: https://github.com/Aarav5005
+
+📄 License
+
+This project is proprietary and developed exclusively for MOX VOX.
+All rights reserved © 2024 MOX VOX.
