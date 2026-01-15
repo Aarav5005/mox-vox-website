@@ -41,7 +41,7 @@ const ContactSection = () => {
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-lg mt-4"
@@ -59,6 +59,15 @@ const ContactSection = () => {
             </div>
 
             <div className="border-t border-border pt-8">
+              <p className="font-body text-sm uppercase tracking-[0.2em] text-cream-muted mb-3">
+                Opening Hours
+              </p>
+              <p className="font-body text-lg text-cream mb-8">
+                Open Daily: 11:00 AM – 11:00 PM
+              </p>
+            </div>
+
+            <div className="border-t border-border pt-8">
               <p className="font-body text-sm uppercase tracking-[0.2em] text-cream-muted mb-6">
                 Follow Us
               </p>
@@ -73,7 +82,7 @@ const ContactSection = () => {
                   <span className="font-body">@mox_vox</span>
                 </a>
                 <a
-                  href="https://facebook.com/moxvox"
+                  href="https://www.facebook.com/MOXVOXTHERESTRO/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-cream hover:text-gold transition-colors duration-300"

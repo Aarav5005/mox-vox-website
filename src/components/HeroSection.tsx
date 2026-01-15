@@ -70,7 +70,7 @@ const HeroSection = () => {
             Book Now
           </a>
           <a
-            href="https://www.zomato.com"
+            href="https://www.zomato.com/jodhpur/mox-vox-the-restro-shastri-nagar"
             target="_blank"
             rel="noopener noreferrer"
             className="px-10 py-4 glass-button text-cream font-body font-medium text-sm uppercase tracking-widest rounded-sm"

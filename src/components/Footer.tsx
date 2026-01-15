@@ -11,11 +11,11 @@ const Footer = () => {
   ];
 
   const orderLinks = [
-    { name: "Zomato", href: "https://www.zomato.com" },
-    { name: "Swiggy Dineout", href: "https://www.swiggy.com/dineout" },
+    { name: "Zomato", href: "https://www.zomato.com/jodhpur/mox-vox-the-restro-shastri-nagar" },
+    { name: "Swiggy Dineout", href: "https://www.swiggy.com/restaurants/mox-vox-sardarpura-jodhpur-686562/dineout" },
     {
       name: "WhatsApp",
-      href: "https://wa.me/919461761555?text=Hi%2C%20I%20would%20like%20to%20make%20a%20reservation%20at%20MOX%20VOX",
+      href: "https://wa.me/919461761555?text=Hi%2C%20I%E2%80%99d%20like%20to%20make%20a%20reservation%20at%20Mox%20Vox.%20Please%20assist%20me.",
     },
   ];
 

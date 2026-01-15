@@ -10,6 +10,7 @@ interface PackageItem {
   minPax: string;
   features: string[];
   note?: string;
+  whatsappMessage: string;
 }
 
 const packages: PackageItem[] = [
@@ -18,7 +19,8 @@ const packages: PackageItem[] = [
     title: "Birthday Package",
     price: "₹469 + GST",
     type: "per person",
-    minPax: "Minimum 20 pax for DJ / 30 pax for Club",
+    minPax: "Perfect for joyful birthday celebrations",
+    whatsappMessage: "Hi%2C%20I%E2%80%99m%20interested%20in%20booking%20a%20Birthday%20celebration%20at%20Mox%20Vox.%20Please%20share%20details%20and%20availability.",
     features: [
       "Unlimited package",
       "2 Welcome Drinks",
@@ -33,7 +35,8 @@ const packages: PackageItem[] = [
     title: "Corporate Package",
     price: "₹469 + GST",
     type: "per person",
-    minPax: "Minimum 20 pax for DJ / 30 pax for Club",
+    minPax: "Ideal for professional and team gatherings",
+    whatsappMessage: "Hi%2C%20I%E2%80%99m%20interested%20in%20a%20Corporate%20event%20booking%20at%20Mox%20Vox.%20Kindly%20share%20package%20details.",
     features: [
       "Unlimited package",
       "1 Welcome Drink",
@@ -55,7 +58,8 @@ const packages: PackageItem[] = [
     title: "Family Package",
     price: "₹569 + GST",
     type: "per person",
-    minPax: "Minimum 20 pax for DJ / 30 pax for Club",
+    minPax: "Designed for family get-togethers",
+    whatsappMessage: "Hi%2C%20I%E2%80%99m%20planning%20a%20family%20get-together%20at%20Mox%20Vox.%20Please%20share%20more%20information.",
     features: [
       "Unlimited package",
       "2 Welcome Drinks",
@@ -80,7 +84,8 @@ const packages: PackageItem[] = [
     title: "Special Group Package",
     price: "₹4,999",
     type: "for 10 people",
-    minPax: "Ideal for small celebrations",
+    minPax: "Great for private group celebrations",
+    whatsappMessage: "Hi%2C%20I%E2%80%99m%20interested%20in%20hosting%20a%20group%20celebration%20at%20Mox%20Vox.%20Please%20guide%20me%20with%20the%20details.",
     features: [
       "Fixed package",
       "Welcome Drinks",
@@ -129,7 +134,8 @@ const PackagesSection = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
               transition={{ duration: 0.8, delay: 0.1 * index }}
-              className="glass-card rounded-lg p-6 sm:p-8 hover:border-gold/30 transition-all duration-300"
+              className="glass-card rounded-lg p-6 sm:p-8 hover:border-gold/30 transition-all duration-300 group cursor-pointer focus-within:ring-2 focus-within:ring-gold/50"
+              tabIndex={0}
             >
               <div className="flex items-start gap-4 mb-6">
                 <div className="text-gold">{pkg.icon}</div>
@@ -165,10 +171,19 @@ const PackagesSection = () => {
               </ul>
 
               {pkg.note && (
-                <p className="font-body text-xs text-cream-muted italic border-t border-border pt-4">
+                <p className="font-body text-xs text-cream-muted italic border-t border-border pt-4 mb-4">
                   Note: {pkg.note}
                 </p>
               )}
+
+              <a
+                href={`https://wa.me/919461761555?text=${pkg.whatsappMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full block text-center px-6 py-3 gradient-gold text-primary-foreground font-body font-medium text-sm uppercase tracking-widest rounded-sm transition-all duration-300 hover:shadow-gold opacity-0 group-hover:opacity-100 md:group-focus-within:opacity-100 md:group-focus-within:block"
+              >
+                Book Now
+              </a>
             </motion.div>
           ))}
         </div>
@@ -180,7 +195,7 @@ const PackagesSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/919461761555?text=Hi%2C%20I%20would%20like%20to%20book%20a%20party%20package%20at%20MOX%20VOX"
+            href="https://wa.me/919461761555?text=Hi%2C%20I%E2%80%99d%20like%20to%20make%20a%20reservation%20at%20Mox%20Vox.%20Please%20assist%20me."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 gradient-gold text-primary-foreground font-body font-medium text-sm uppercase tracking-widest rounded-sm transition-all duration-300 hover:shadow-gold hover:scale-105"

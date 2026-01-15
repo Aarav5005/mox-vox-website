@@ -101,6 +101,10 @@ const MenuSection = () => {
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-cream">
             Our Signature Selections
           </h2>
+          <div className="flex items-center justify-center gap-1 mt-2">
+            <img src="/pure_veg.svg" alt="" className="h-3.5 w-3.5" />
+            <span className="font-body text-sm text-cream/60">Pure Vegetarian Restaurant</span>
+          </div>
         </motion.div>
 
         <motion.div
@@ -156,6 +160,7 @@ const MenuSection = () => {
             </div>
           ))}
         </motion.div>
+        <p className="text-center font-body text-sm text-cream/60 italic mt-8">Prices are subject to change.</p>
       </div>
     </section>
   );

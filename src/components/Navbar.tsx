@@ -28,16 +28,31 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-charcoal-dark/95 backdrop-blur-md border-b border-border"
-            : "bg-transparent"
+            ? "bg-charcoal-dark/95 backdrop-blur-md border-b border-border shadow-sm"
+            : "bg-charcoal-dark/20 backdrop-blur-sm"
         }`}
       >
-        <div className="container-narrow mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="container-narrow mx-auto pl-4 pr-0 sm:pl-6 sm:pr-0 lg:pl-8 lg:pr-0">
+          <div className="flex items-center justify-between h-14 sm:h-18">
             {/* Logo */}
-            <a href="#" className="font-display text-2xl text-cream">
-              MOX <span className="text-gold">VOX</span>
+            <a href="#" className="flex items-center">
+              <img 
+                src="/mox-vox-logo.svg" 
+                alt="Mox Vox Logo" 
+                className="h-[42px] sm:h-16 w-auto scale-110 sm:scale-[1.15] transition-all duration-300 hover:scale-[1.2] sm:hover:scale-[1.25]" 
+                style={{ filter: 'drop-shadow(0 3px 6px rgba(217, 119, 6, 0.25))' }}
+              />
             </a>
+
+            {/* Mobile Buttons */}
+            <div className="flex md:hidden items-center gap-1 ml-4">
+              <a
+                href="tel:+919461761555"
+                className="px-3 py-1 gradient-gold text-primary-foreground font-body text-xs uppercase tracking-wider rounded-sm transition-all duration-300 hover:shadow-gold"
+              >
+                Call Now
+              </a>
+            </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
@@ -45,17 +60,19 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="font-body text-sm uppercase tracking-wider text-cream/80 hover:text-gold transition-colors duration-300"
+                  className="font-body text-sm uppercase tracking-wider text-cream/80 hover:text-gold hover:border-b-2 hover:border-gold transition-all duration-300"
                 >
                   {link.name}
                 </a>
               ))}
-              <a
-                href="#booking"
-                className="px-6 py-2 gradient-gold text-primary-foreground font-body text-sm uppercase tracking-wider rounded-sm transition-all duration-300 hover:shadow-gold"
-              >
-                Book Now
-              </a>
+              <div className="flex items-center gap-2">
+                <a
+                  href="tel:+919461761555"
+                  className="px-6 py-2 gradient-gold text-primary-foreground font-body text-sm uppercase tracking-wider rounded-sm transition-all duration-300 hover:shadow-gold"
+                >
+                  Call Now
+                </a>
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -100,6 +117,13 @@ const Navbar = () => {
                 className="mt-4 px-8 py-3 gradient-gold text-primary-foreground font-body text-sm uppercase tracking-wider rounded-sm"
               >
                 Book Now
+              </a>
+              <a
+                href="tel:+919461761555"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="mt-4 px-8 py-3 gradient-gold text-primary-foreground font-body text-sm uppercase tracking-wider rounded-sm"
+              >
+                Call Now
               </a>
             </div>
           </motion.div>
