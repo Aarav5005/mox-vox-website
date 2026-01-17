@@ -234,3 +234,10 @@
     transform: scale(1.02);
   }
 }
+
+@media (max-width: 768px) {
+  .flex.md\:hidden.items-center.gap-1 {
+    position: absolute;
+    right: 3rem;
+  }
+}
